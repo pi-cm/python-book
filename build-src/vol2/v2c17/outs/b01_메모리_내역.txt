@@ -1,0 +1,13 @@
+파라미터 134,250,496개 × 4바이트 = 512 MB
+      모델·입력 올린 뒤:    544 MB
+    1회 forward 뒤:    808 MB
+   1회 backward 뒤:  1,073 MB
+       1회 step 뒤:  2,097 MB
+  1회 zero_grad 뒤:  1,585 MB
+         1회 중 최고:  2,609 MB
+    2회 forward 뒤:  1,841 MB
+   2회 backward 뒤:  2,097 MB
+       2회 step 뒤:  2,097 MB
+  2회 zero_grad 뒤:  1,585 MB
+         2회 중 최고:  2,609 MB
+Adam이 가중치마다 기억하는 것: ['exp_avg', 'exp_avg_sq']

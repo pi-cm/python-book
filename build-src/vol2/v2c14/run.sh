@@ -1,0 +1,3 @@
+#!/bin/zsh
+# 개발용: 블록 하나 실행
+cd /private/tmp/claude-501/-Users-changmin-git-python-book/e14a96f2-1a68-4a7a-918b-2027747e5566/scratchpad/v2c14/work && HF_HOME=/private/tmp/claude-501/-Users-changmin-git-python-book/e14a96f2-1a68-4a7a-918b-2027747e5566/scratchpad/hf HF_HUB_OFFLINE=1 TRANSFORMERS_VERBOSITY=error HF_HUB_DISABLE_PROGRESS_BARS=1 TOKENIZERS_PARALLELISM=false uv run -q --no-project --python 3.12 --with torch --with numpy --with transformers --with peft --with accelerate python -W ignore /private/tmp/claude-501/-Users-changmin-git-python-book/e14a96f2-1a68-4a7a-918b-2027747e5566/scratchpad/v2c14/$1.py 2>&1 | grep -v Redirects

@@ -1,0 +1,9 @@
+배치    64: 성공, 최고   1.4 GB
+배치   128: 성공, 최고   2.8 GB
+배치   256: 성공, 최고   5.4 GB
+배치   512: 성공, 최고  10.8 GB
+배치  1024: 성공, 최고  21.5 GB
+배치  2048: 메모리 부족!
+    CUDA out of memory. Tried to allocate 1.53 GiB. GPU 0 has a total capacity of 23.64 GiB of which 1.46 GiB is free.
+예약 메모리 정리 뒤: 0.1 GB
+배치 1024로 다시 학습: 문제없음

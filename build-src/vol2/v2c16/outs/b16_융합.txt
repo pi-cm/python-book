@@ -1,0 +1,5 @@
+결과 같음: True
+보통(eager)   :   5.25 ms
+torch.compile :   0.60 ms (8.8배)
+내장 F.gelu   :   0.59 ms
+256MB를 한 번 읽고 한 번 쓰는 최소 시간: 0.53 ms

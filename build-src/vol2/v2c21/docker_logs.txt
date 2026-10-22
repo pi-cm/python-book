@@ -1,0 +1,8 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+INFO:     벡터 준비 완료: 사용자 3000명, 식당 400곳, sha256=ab1b2963a93c
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     192.168.65.1:51870 - "GET /users/0/recommendations?k=3 HTTP/1.1" 200 OK
+INFO:     192.168.65.1:42865 - "GET /users/2706/recommendations?k=3 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41204 - "GET /health HTTP/1.1" 200 OK

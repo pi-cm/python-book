@@ -1,0 +1,4 @@
+입력: torch.float32 | Linear 출력: torch.float16 | 점수: torch.float16
+softmax: torch.float32 | 손실: torch.float32
+가중치: torch.float32 | 기울기: torch.float32
+autocast 밖의 Linear 출력: torch.float32

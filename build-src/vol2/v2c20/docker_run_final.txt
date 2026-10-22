@@ -1,0 +1,6 @@
+e809272f1af563b436d7f6fe191d09022a4d6a56036a803304204bb487328e63
+NAMES     IMAGE                  STATUS                            PORTS
+fashion   fashion-service:onnx   Up 4 seconds (health: starting)   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+{"file":"pullover.png","label":"풀오버","class_id":2,"probability":0.9998,"top3":[{"label":"풀오버","probability":0.9998},{"label":"T셔츠","probability":0.0001},{"label":"셔츠","probability":0.0}]}
+NAMES     STATUS
+fashion   Up 34 seconds (healthy)

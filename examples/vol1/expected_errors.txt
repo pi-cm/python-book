@@ -1,0 +1,54 @@
+# 실행하면 실패하는 것이 정상인 예제와 그 이유 (tools/extract_examples.py가 만듦)
+01-python-first-steps/1.3_첫_번째_파이썬_프로그램_따로_1.py  # 키보드 입력이 필요한 예제(직접 실행해 입력)
+01-python-first-steps/greeting_generator.py  # 키보드 입력이 필요한 예제(직접 실행해 입력)
+02-variables-data/2.1_변수와_할당의_깊은_이해_따로_5.py  # 일부러 오류를 보여 주는 예제
+02-variables-data/2.2_파이썬의_모든_데이터_타입_완전판_따로_5.py  # 일부러 오류를 보여 주는 예제
+02-variables-data/2.5_입력과_출력_완전_가이드_따로_1.py  # 키보드 입력이 필요한 예제(직접 실행해 입력)
+02-variables-data/07_실습_프로젝트_개인정보_관리_시스템_따로_1.py  # 키보드 입력이 필요한 예제(직접 실행해 입력)
+03-operators/3.3_Walrus_연산자_완전_마스터_따로_4.py  # 키보드 입력이 필요한 예제(직접 실행해 입력)
+03-operators/07_실습_프로젝트_과학_계산기_따로_1.py  # 키보드 입력이 필요한 예제(직접 실행해 입력)
+04-control-flow/4.5_예외_처리와_조건문의_조화_따로_1.py  # 키보드 입력이 필요한 예제(직접 실행해 입력)
+05-loops/5.2_while_문과_무한_루프_따로_1.py  # 키보드 입력이 필요한 예제(직접 실행해 입력)
+14-modules-packages/setup.py  # 참고용 레거시 예제(읽기만 하고 실행하지 않음)
+18-database-integration/18.10_보안_고려사항_따로_3.py  # 키보드 입력이 필요한 예제(직접 실행해 입력)
+appendix-C-version-features/06_C.7_Python_3.13_따로_1.py  # Python 3.13 이상에서만 실행됨
+appendix-C-version-features/07_C.8_Python_3.14_맛보기_따로_1.py  # Python 3.14 이상에서만 실행됨
+appendix-D-troubleshooting/01_D.2_들여쓰기와_문법_오류_따로_1.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/01_D.2_들여쓰기와_문법_오류_따로_2.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/01_D.2_들여쓰기와_문법_오류_따로_3.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/01_D.2_들여쓰기와_문법_오류_따로_4.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/01_D.2_들여쓰기와_문법_오류_따로_5.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/01_D.2_들여쓰기와_문법_오류_따로_6.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/01_D.2_들여쓰기와_문법_오류_따로_7.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/01_D.2_들여쓰기와_문법_오류_따로_8.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/02_D.3_이름_오류_따로_1.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/02_D.3_이름_오류_따로_2.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/02_D.3_이름_오류_따로_3.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/03_D.4_자료형_오류_따로_1.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/03_D.4_자료형_오류_따로_2.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/03_D.4_자료형_오류_따로_3.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/03_D.4_자료형_오류_따로_4.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/03_D.4_자료형_오류_따로_5.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/03_D.4_자료형_오류_따로_6.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/03_D.4_자료형_오류_따로_7.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/03_D.4_자료형_오류_따로_8.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/03_D.4_자료형_오류_따로_9.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/04_D.5_값과_범위_오류_따로_1.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/04_D.5_값과_범위_오류_따로_2.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/04_D.5_값과_범위_오류_따로_3.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/04_D.5_값과_범위_오류_따로_4.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/04_D.5_값과_범위_오류_따로_5.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/04_D.5_값과_범위_오류_따로_6.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/05_D.6_모듈_파일_재귀_따로_1.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/05_D.6_모듈_파일_재귀_따로_2.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/05_D.6_모듈_파일_재귀_따로_3.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/05_D.6_모듈_파일_재귀_따로_4.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/05_D.6_모듈_파일_재귀_따로_5.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/06_D.7_오류는_안_나는데_결과가_이상할_때_따로_1.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/06_D.7_오류는_안_나는데_결과가_이상할_때_따로_2.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/06_D.7_오류는_안_나는데_결과가_이상할_때_따로_3.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/06_D.7_오류는_안_나는데_결과가_이상할_때_따로_4.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/06_D.7_오류는_안_나는데_결과가_이상할_때_따로_5.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/06_D.7_오류는_안_나는데_결과가_이상할_때_따로_6.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/06_D.7_오류는_안_나는데_결과가_이상할_때_따로_7.py  # 일부러 오류를 보여 주는 예제
+appendix-D-troubleshooting/07_D.8_오류_메시지_읽는_법_따로_1.py  # 일부러 오류를 보여 주는 예제

@@ -1,0 +1,4 @@
+float32 (highest)       20.22 ms |  54.4 TFLOPS | 상대 오차 1.6e-06
+float32 + TF32 (high)   13.00 ms |  84.6 TFLOPS | 상대 오차 2.9e-04
+bfloat16                 6.63 ms | 165.8 TFLOPS | 상대 오차 3.1e-03
+float16                  6.76 ms | 162.6 TFLOPS | 상대 오차 3.6e-04

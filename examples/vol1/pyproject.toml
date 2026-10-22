@@ -1,0 +1,29 @@
+[project]
+name = "python-book-vol1-examples"
+version = "1.0.0"
+description = "파이썬 완전 백과사전 1권 예제 코드"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles",
+    "aiohttp",
+    "alembic",
+    "click",
+    "fastapi[standard]",
+    "holidays",
+    "matplotlib",
+    "memory-profiler",
+    "numpy",
+    "openpyxl",
+    "pandas",
+    "psutil",
+    "pydantic",
+    "pydantic-settings",
+    "pytest",
+    "requests",
+    "seaborn",
+    "setuptools",
+    "sqlalchemy",
+]
+
+[tool.uv]
+package = false

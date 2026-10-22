@@ -1,0 +1,6 @@
+CPU(일반) → GPU:  11.5 GB/s
+CPU(고정) → GPU:  12.2 GB/s
+GPU → CPU(일반):   3.7 GB/s
+GPU → CPU(고정):  12.3 GB/s
+일반 메모리 + non_blocking: 맡기고 돌아오기까지  21.54 ms, 다 옮기기까지  21.65 ms
+고정 메모리 + non_blocking: 맡기고 돌아오기까지   0.15 ms, 다 옮기기까지  20.61 ms

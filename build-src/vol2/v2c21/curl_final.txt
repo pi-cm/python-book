@@ -1,0 +1,6 @@
+{"app":"1.0.0","vectors_sha256":"ab1b2963a93c"}
+{"strategy":"personal","items":[{"id":271,"name":"신촌 양식 271","area":"신촌","cuisine":"양식","price":1,"score":2.5672},{"id":201,"name":"신촌 양식 201","area":"신촌","cuisine":"양식","price":1,"score":2.2646},{"id":166,"name":"홍대 중식 166","area":"홍대","cuisine":"중식","price":1,"score":2.1025}]}
+{"strategy":"personal","items":[{"id":149,"name":"이태원 양식 149","area":"이태원","cuisine":"양식","price":2,"score":-1.1206},{"id":121,"name":"이태원 양식 121","area":"이태원","cuisine":"양식","price":2,"score":-1.6019}]}
+{"strategy":"similar","items":[{"id":342,"name":"종로 분식 342","area":"종로","cuisine":"분식","price":3,"score":0.9644},{"id":140,"name":"종로 분식 140","area":"종로","cuisine":"분식","price":2,"score":0.9641},{"id":334,"name":"종로 분식 334","area":"종로","cuisine":"분식","price":3,"score":0.9428}]}
+{"strategy":"new_user","items":[{"id":194,"name":"성수 분식 194","area":"성수","cuisine":"분식","price":1,"score":9.1637},{"id":59,"name":"성수 고기 059","area":"성수","cuisine":"고기","price":1,"score":9.1107},{"id":242,"name":"성수 중식 242","area":"성수","cuisine":"중식","price":1,"score":9.068}]}
+{"detail":[{"type":"less_than_equal","loc":["query","k"],"msg":"Input should be less than or equal to 50","input":"100","ctx":{"le":50}}]}

@@ -1,0 +1,35 @@
+[project]
+name = "python-book-vol2-examples"
+version = "1.0.0"
+description = "파이썬 완전 백과사전 2권(PyTorch 딥러닝 편) 예제 코드"
+requires-python = "==3.12.*"
+# 부록 A.1의 표에 적은, 본문 출력을 만든 버전으로 고정했다
+dependencies = [
+    "torch==2.14.1",
+    "torchvision==0.29.1",
+    "numpy",
+    "scikit-learn>=1.9",
+    "pandas>=3.0",
+    "matplotlib==3.11.2",
+    "pillow==13.0.0",
+    "statsmodels>=0.15",
+    "transformers==5.20.2",
+    "datasets==5.1.0",
+    "tokenizers==0.23.3",
+    "kiwipiepy==0.24.1",
+    "peft==0.21.2",
+    "accelerate==1.15.0",
+    "tensorboard==2.21.0",
+    "mlflow==3.17.2",
+    "optuna==5.0.0",
+    "pyyaml==6.0.3",
+    "onnx==1.23.2",
+    "onnxscript==0.7.2",
+    "onnxruntime==1.31.0",
+    "torchao==0.18.0",
+    "fastapi[standard]==0.156.4",
+    "pytest==8.4.2",
+]
+
+[tool.uv]
+package = false

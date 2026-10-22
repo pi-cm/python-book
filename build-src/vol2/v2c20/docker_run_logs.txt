@@ -1,0 +1,9 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+[0;93m2026-10-21 06:47:43.287206542 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+INFO:     모델 준비 완료: backend=onnx, sha256=a094ffba494e
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     192.168.65.1:38127 - "GET /version HTTP/1.1" 200 OK
+INFO:     192.168.65.1:19332 - "POST /predict/image HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33314 - "GET /health HTTP/1.1" 200 OK

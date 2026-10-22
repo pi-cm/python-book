@@ -1,0 +1,33 @@
+# GPU가 없는 컴퓨터에서 실패하는 것이 정상인 예제 (tools/extract_examples.py가 만듦)
+# 모두 RTX 4090 두 장이 달린 리눅스 서버에서 본문의 실행 방법대로 통과했다.
+16-gpu-performance/b01_환경.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b02_병렬.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b03_잘못재기.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b04_재기도구.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b05_교차점.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b06_메모리.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b07_활성화메모리.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b08_OOM.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b09_고정메모리.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b12_GradScaler.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b13_정밀도비교.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b14_TF32.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b15_compile.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b16_융합.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b17_compile모드.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b19_SDPA.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b20_프로파일러.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b21_병목찾기.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b22_배치처리량.py  # NVIDIA GPU가 있어야 실행됨
+16-gpu-performance/b23_실습.py  # NVIDIA GPU가 있어야 실행됨
+17-distributed-training/b01_메모리_내역.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고
+17-distributed-training/b04_누적_메모리.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고
+17-distributed-training/b05_체크포인팅.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고
+17-distributed-training/b06_첫_allreduce.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고
+17-distributed-training/b07_통신_비용.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고
+17-distributed-training/b08_ddp_옷분류.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고
+17-distributed-training/b09_ddp_같은가.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고
+17-distributed-training/b10_처리량.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고
+17-distributed-training/b11_no_sync.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고
+17-distributed-training/b12_fsdp.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고
+17-distributed-training/b15_멈춤.py  # NVIDIA GPU(대부분 2장)와 torchrun으로 실행 — 본문의 실행 명령 참고

@@ -1,0 +1,4 @@
+REPOSITORY        TAG         IMAGE ID       CREATED                  SIZE
+fashion-service   torch-cpu   d795993dd16f   Less than a second ago   1.51GB
+fashion-service   onnx        9af313c3c83e   1 second ago             445MB
+fashion-service   torch       b626eed4c12e   17 minutes ago           9.22GB

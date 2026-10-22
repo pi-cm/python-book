@@ -1,0 +1,12 @@
+5걸음 동안 GPU가 일한 시간: 125.8 ms
+  55.98 ms  44.5%  100번  aten::convolution_backward
+  23.27 ms  18.5%  100번  aten::cudnn_convolution
+  15.85 ms  12.6%  100번  aten::cudnn_batch_norm_backward
+   7.83 ms   6.2%   85번  aten::threshold_backward
+   7.53 ms   6.0%  100번  aten::cudnn_batch_norm
+   5.19 ms   4.1%  180번  aten::add_
+   3.63 ms   2.9%   85번  aten::clamp_min_
+   2.76 ms   2.2%    5번  aten::max_pool2d_with_indices_backward
+이름표 '순전파': CPU에서  11.1 ms
+이름표 '역전파': CPU에서  43.7 ms
+이름표 '갱신': CPU에서   0.5 ms

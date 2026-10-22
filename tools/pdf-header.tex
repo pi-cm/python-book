@@ -1,0 +1,113 @@
+% 파이썬 백과사전 조판 — "공책과 형광펜" 디자인 시스템의 인쇄용 구현
+% 값의 출처: 디자인 시스템 tokens.json (색·글꼴·크기). 여기서 바꾸면 그쪽도 함께 바꾼다.
+
+\makeatletter
+
+% ---------- 색 토큰 ----------
+\usepackage{xcolor}
+\definecolor{ink}{HTML}{1C2629}          % 본문
+\definecolor{inkmuted}{HTML}{56656A}     % 머리말·보조 글
+\definecolor{teal}{HTML}{0E6B70}         % 장/절 번호·제목 강조
+\definecolor{highlighter}{HTML}{FFE066}  % 형광펜: 장 번호 띠
+\definecolor{qasurface}{HTML}{FFF5C7}    % Q&A 상자 바탕
+\definecolor{goalsurface}{HTML}{EAF3F2}  % 학습 목표 상자 바탕
+\definecolor{codesurface}{HTML}{F2F5F4}  % 코드 블록 바탕
+\definecolor{line}{HTML}{C9D4D2}         % 가는 선
+\color{ink}
+
+% ---------- 글꼴 토큰 ----------
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{GowunBatang}[Path=\bookfontdir/, Extension=.ttf, Scale=0.95,
+  UprightFont=*-Regular, BoldFont=*-Bold]
+\setsansfont{IBMPlexSansKR}[Path=\bookfontdir/, Extension=.ttf,
+  UprightFont=*-Regular, BoldFont=*-Bold, FontFace={sb}{n}{*-SemiBold}]
+\setmonofont{D2Coding}[Scale=0.92]
+% 한자: 고운바탕에 없어서 macOS 기본 명조로 찍는다 (book.lua가 \hanja{}로 감쌈)
+\newfontfamily\hanjafont{AppleMyungjo}
+\newcommand{\hanja}[1]{{\hanjafont #1}}
+% 책 글꼴에 없는 문자용 대체 글꼴 (macOS 시스템 글꼴). book.lua가 해당 문자만 감싼다.
+% - 태국 문자: 언어 모델이 높은 온도에서 섞어 내는 출력 (2권 14장)
+% - 블록 요소(▁): SentencePiece의 공백 표시 (2권 13장)
+% - U+FFFD(�): 한 글자가 토큰 둘로 쪼개질 때 보이는 깨진 바이트 (2권 14장)
+\newfontfamily\thaifont{Thonburi}
+\newfontfamily\symfallback{Arial Unicode MS}
+\newcommand{\semibold}{\fontseries{sb}\selectfont}
+\XeTeXlinebreaklocale "ko"
+\linespread{1.32}  % 바탕체 10.5pt 기준 행간 약 1.75
+\setlength{\parskip}{0.55em}
+
+% ---------- 장·절 제목 ----------
+\setcounter{secnumdepth}{0}  % 장만 번호를 쓰고, 절 번호는 원고 제목의 것을 쓴다
+\usepackage{titlesec}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\newcommand{\bookchapnum}[1]{\begin{tikzpicture}[baseline=(n.base)]
+  \node[inner sep=0pt, font=\fontsize{46}{46}\selectfont, text=teal] (n) {#1};
+  \begin{scope}[on background layer]
+    \fill[highlighter] ([xshift=-3pt, yshift=-2pt]n.south west) rectangle ([xshift=6pt]n.east);
+  \end{scope}
+\end{tikzpicture}}
+\titleformat{\chapter}[display]
+  {\sffamily\bfseries\color{ink}}
+  {\bookchapnum{\two@digits{\thechapter}}}
+  {14pt}
+  {\fontsize{24}{30}\selectfont\raggedright}
+  [\vspace{6pt}{\color{line}\titlerule[0.6pt]}]
+\titlespacing*{\chapter}{0pt}{10pt}{28pt}
+\titleformat{\section}{\sffamily\semibold\fontsize{15}{20}\selectfont\color{ink}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{22pt}{8pt}
+\titleformat{\subsection}{\sffamily\semibold\fontsize{12}{16}\selectfont\color{ink}}{}{0pt}{}
+\titlespacing*{\subsection}{0pt}{16pt}{4pt}
+\titleformat{\subsubsection}{\sffamily\semibold\fontsize{10.5}{14}\selectfont\color{teal}}{}{0pt}{}
+\titlespacing*{\subsubsection}{0pt}{12pt}{2pt}
+\newcommand{\booksecnum}[1]{{\color{teal}#1}\hspace{0.5em}}
+
+% ---------- 머리말·꼬리말 ----------
+\usepackage{emptypage}  % 장 시작 전 빈 쪽에는 머리말을 찍지 않는다
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\two@digits{\thechapter}\quad #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\fancyhead[LE]{\sffamily\fontsize{8.5}{10}\selectfont\color{teal}\thepage\quad\color{inkmuted}\leftmark}
+\fancyhead[RO]{\sffamily\fontsize{8.5}{10}\selectfont\color{inkmuted}\rightmark\quad\color{teal}\thepage}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\sffamily\fontsize{8.5}{10}\selectfont\color{teal}\thepage}}
+
+% ---------- 목록 기호 ----------
+\renewcommand{\labelitemi}{{\color{teal}\rule[0.2em]{0.32em}{0.32em}}}
+\renewcommand{\labelitemii}{{\color{inkmuted}\textendash}}
+
+% ---------- 코드 블록 ----------
+% 긴 줄은 자동 줄바꿈(↪ 표시)하고, 바탕색 상자에 담는다
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breakanywhere,commandchars=\\\{\},fontsize=\fontsize{8.8}{12}\selectfont}
+\usepackage[most]{tcolorbox}
+\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, enhanced, colback=codesurface,
+  frame hidden, arc=2pt, boxrule=0pt, left=8pt, right=8pt, top=6pt, bottom=6pt,
+  before skip=6pt, after skip=10pt]}{\end{tcolorbox}}
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{\leavevmode{\color{teal}\oldtexttt{#1}}}  % 표 칸 맨 앞에서 색을 바꿔도 줄이 밀리지 않게
+
+% ---------- 상자 4종 ----------
+\newcommand{\boxlabel}[1]{{\sffamily\semibold\fontsize{8.5}{10}\selectfont\color{teal}#1}\par\vspace{2pt}}
+\newtcolorbox{goalsbox}{breakable, enhanced, colback=goalsurface, frame hidden, arc=2pt,
+  left=12pt, right=12pt, top=10pt, bottom=8pt, before skip=4pt, after skip=14pt}
+\newtcolorbox{qabox}{breakable, enhanced, colback=qasurface, frame hidden, arc=2pt,
+  left=12pt, right=30pt, top=9pt, bottom=7pt, before skip=8pt, after skip=12pt,
+  overlay={\node[anchor=north east, inner sep=6pt, font=\sffamily\bfseries\fontsize{20}{20}\selectfont,
+    text=teal, text opacity=0.55] at (frame.north east) {Q};}}
+\newtcolorbox{tipbox}{breakable, enhanced, colback=white, colframe=line, boxrule=0.6pt, arc=2pt,
+  left=12pt, right=12pt, top=8pt, bottom=6pt, before skip=8pt, after skip=12pt}
+\newtcolorbox{notebox}{breakable, enhanced, colback=white, frame hidden,
+  borderline west={0.6pt}{0pt}{line}, left=12pt, right=4pt, top=2pt, bottom=2pt,
+  before skip=6pt, after skip=10pt, fontupper=\color{inkmuted}}
+
+% ---------- 구분선 ----------
+\newcommand{\bookrule}{\par\vspace{6pt}{\centering\color{line}\rule{0.25\linewidth}{0.6pt}\par}\vspace{6pt}}
+
+% ---------- 표 ----------
+\renewcommand{\arraystretch}{1.25}
+
+\makeatother

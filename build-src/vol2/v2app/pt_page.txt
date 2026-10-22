@@ -1,0 +1,457 @@
+ 
+   Shortcuts 
+    
+ 
+ 
+         Start Locally   
+
+ 
+   
+     
+       Select your preferences and run the install command. Stable represents the most currently tested and supported version of PyTorch. This should
+   be suitable for many users. Preview is available if you want the latest, not fully tested and supported, builds that are generated nightly.
+   Please ensure that you have  met the prerequisites below (e.g., numpy) ,  depending on your package manager. You can also
+   install previous versions of PyTorch . Note that LibTorch is only available for C++.
+ 
+
+  NOTE:  Latest Stable PyTorch requires Python 3.10 or later.  
+
+ 
+   
+     
+       PyTorch Build 
+     
+     
+       Your OS 
+     
+     
+       Package 
+     
+     
+       Language 
+     
+     
+       Compute Platform 
+     
+     
+       Run this Command: 
+     
+   
+
+   
+     
+       
+         PyTorch Build 
+       
+       
+         Stable (2.7.0) 
+       
+       
+         Preview (Nightly) 
+       
+     
+     
+       
+         Your OS 
+       
+       
+         Linux 
+       
+       
+         Mac 
+       
+       
+         Windows 
+       
+     
+     
+       
+         Package 
+       
+       
+         Pip 
+       
+       
+         LibTorch 
+       
+       
+         Source 
+       
+     
+     
+       
+         Language 
+       
+       
+         Python 
+       
+       
+         C++ / Java 
+       
+     
+     
+       
+         Compute Platform 
+       
+       
+         CUDA 11.8 
+       
+       
+         CUDA 12.6 
+       
+       
+         CUDA 12.8 
+       
+       
+         ROCm 6.3 
+       
+       
+         CPU 
+       
+     
+     
+       
+         Run this Command: 
+       
+       
+          pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118  
+       
+     
+   
+ 
+ 
+
+     
+   
+ 
+
+  Could not find the right platform for your hardware?  See the  PyTorch Additional Platforms  page. 
+
+ 
+
+ 
+   
+ Installing on macOS 
+
+ PyTorch can be installed and used on macOS. Depending on your system and GPU capabilities, your experience with PyTorch on macOS may vary in terms of processing time. 
+
+ Prerequisites   
+
+ macOS Version   
+
+ PyTorch is supported on macOS 10.15 (Catalina) or above. 
+
+ Python   
+
+ It is recommended that you use Python 3.10 - 3.14.
+You can install Python either through  Homebrew  or
+the  Python website . 
+
+ Package Manager   
+
+ To install the PyTorch binaries, you will need to use the supported package manager:  pip . 
+ pip   
+
+  Python 3  
+
+ If you installed Python via Homebrew or the Python website,  pip  was installed with it. If you installed Python 3.x, then you will be using the command  pip3 . 
+
+ 
+   Tip: If you want to use just the command   pip , instead of  pip3 , you can symlink  pip  to the  pip3  binary. 
+ 
+
+ Installation   
+
+ pip   
+
+ To install PyTorch via pip, use the following command, depending on your Python version: 
+
+     # Python 3.x 
+pip3  install  torch torchvision
+    
+
+ Verification   
+
+ To ensure that PyTorch was installed correctly, we can verify the installation by running sample PyTorch code. Here we will construct a randomly initialized tensor. 
+
+     import   torch 
+ x   =   torch  .  rand  (  5  ,   3  ) 
+ print  (  x  ) 
+    
+
+ The output should be something similar to: 
+
+    tensor( ,
+         ,
+         ,
+         ,
+         ])
+    
+
+ Building from source   
+
+ For the majority of PyTorch users, installing from a pre-built binary via a package manager will provide the best experience. However, there are times when you may want to install the bleeding edge PyTorch code, whether for testing or actual development on the PyTorch core. To install the latest PyTorch code, you will need to  build PyTorch from source . 
+
+ Prerequisites   
+
+ 
+     Install  pip  
+   Follow the steps described here:  https://github.com/pytorch/pytorch#from-source  
+ 
+
+ You can verify the installation as described  above . 
+
+ 
+   
+ Installing on Linux 
+
+ PyTorch can be installed and used on various Linux distributions. Depending on your system and compute requirements, your experience with PyTorch on Linux may vary in terms of processing time. It is recommended, but not required, that your Linux system has an NVIDIA or AMD GPU in order to harness the full power of PyTorch’s  CUDA   support  or  ROCm  support. 
+
+ Prerequisites   
+
+ Supported Linux Distributions   
+
+ PyTorch is supported on Linux distributions that use  glibc  >= v2.28, which include the following: 
+
+ 
+    Arch Linux , minimum version 2020.01.22 
+    CentOS , minimum version 8 
+    Debian , minimum version 10.0 
+    Fedora , minimum version 24 
+    Mint , minimum version 20 
+    OpenSUSE , minimum version 15 
+    PCLinuxOS , minimum version 2014.7 
+    Slackware , minimum version 14.2 
+    Ubuntu , minimum version 20.04 (please note that 20.04 reached EOL) 
+ 
+
+ 
+   The install instructions here will generally apply to all supported Linux distributions. An example difference is that your distribution may support  yum  instead of  apt . The specific examples shown were run on an Ubuntu 18.04 machine. 
+ 
+
+ Python   
+
+ Python 3.10-3.14 is generally installed by default on any of our supported Linux distributions, which meets our recommendation. 
+
+ 
+   Tip: By default, you will have to use the command  python3  to run Python. If you want to use just the command  python , instead of  python3 , you can symlink  python  to the  python3  binary. 
+ 
+
+ However, if you want to install another version, there are multiple ways: 
+
+ 
+   APT 
+    Python website  
+ 
+
+ If you decide to use APT, you can run the following command to install it: 
+
+     sudo  apt  install  python
+    
+
+ Package Manager   
+
+ To install the PyTorch binaries, you will need to use the supported package manager:  pip . 
+ pip   
+
+  Python 3  
+
+ While Python 3.x is installed by default on Linux,  pip  is not installed by default. 
+
+     sudo  apt  install  python3-pip
+    
+
+ 
+   Tip: If you want to use just the command   pip , instead of  pip3 , you can symlink  pip  to the  pip3  binary. 
+ 
+
+ Installation   
+
+ pip   
+
+ No CUDA   
+
+ To install PyTorch via pip, and do not have a  CUDA-capable  or  ROCm-capable  system or do not require CUDA/ROCm (i.e. GPU support), in the above selector, choose OS: Linux, Package: Pip, Language: Python and Compute Platform: CPU.
+Then, run the command that is presented to you. 
+
+ With CUDA   
+
+ To install PyTorch via pip, and do have a  CUDA-capable  system, in the above selector, choose OS: Linux, Package: Pip, Language: Python and the CUDA version suited to your machine. Often, the latest CUDA version is better.
+Then, run the command that is presented to you. 
+
+ With ROCm   
+
+ To install PyTorch via pip, and do have a  ROCm-capable  system, in the above selector, choose OS: Linux, Package: Pip, Language: Python and the ROCm version supported.
+Then, run the command that is presented to you. 
+
+ Verification   
+
+ To ensure that PyTorch was installed correctly, we can verify the installation by running sample PyTorch code. Here we will construct a randomly initialized tensor. 
+
+     import   torch 
+ x   =   torch  .  rand  (  5  ,   3  ) 
+ print  (  x  ) 
+    
+
+ The output should be something similar to: 
+
+    tensor( ,
+         ,
+         ,
+         ,
+         ])
+    
+
+ Additionally, to check if your GPU driver and CUDA/ROCm is enabled and accessible by PyTorch, run the following commands to return whether or not the GPU driver is enabled (the ROCm build of PyTorch uses the same semantics at the python API level  link , so the below commands should also work for ROCm): 
+
+     import   torch 
+ torch  .  cuda  .  is_available  () 
+    
+
+ Building from source   
+
+ For the majority of PyTorch users, installing from a pre-built binary via a package manager will provide the best experience. However, there are times when you may want to install the bleeding edge PyTorch code, whether for testing or actual development on the PyTorch core. To install the latest PyTorch code, you will need to  build PyTorch from source . 
+
+ Prerequisites   
+
+ 
+   Install  Pip  
+   If you need to build PyTorch with GPU support
+a. for NVIDIA GPUs, install  CUDA , if your machine has a  CUDA-enabled GPU .
+b. for AMD GPUs, install  ROCm , if your machine has a  ROCm-enabled GPU  
+   Follow the steps described here:  https://github.com/pytorch/pytorch#from-source  
+ 
+
+ You can verify the installation as described  above . 
+
+ 
+   
+ Installing on Windows 
+
+ PyTorch can be installed and used on various Windows distributions. Depending on your system and compute requirements, your experience with PyTorch on Windows may vary in terms of processing time. It is recommended, but not required, that your Windows system has an NVIDIA GPU in order to harness the full power of PyTorch’s  CUDA   support . 
+
+ Prerequisites   
+
+ Supported Windows Distributions   
+
+ PyTorch is supported on the following Windows distributions: 
+
+ 
+    Windows  7 and greater;  Windows 10  or greater recommended. 
+    Windows Server 2008  r2 and greater 
+ 
+
+ 
+   The install instructions here will generally apply to all supported Windows distributions. The specific examples shown will be run on a Windows 10 Enterprise machine 
+ 
+
+ Python   
+
+ Currently, PyTorch on Windows only supports Python 3.10-3.14; Python 2.x is not supported. 
+
+ As it is not installed by default on Windows, there are multiple ways to install Python: 
+
+ 
+    Chocolatey  
+    Python website  
+ 
+
+ 
+   If you decide to use Chocolatey, and haven’t installed Chocolatey yet, ensure that you are running your command prompt as an administrator. 
+ 
+
+ For a Chocolatey-based install, run the following command in an administrative command prompt: 
+
+    choco  install  python
+    
+
+ Package Manager   
+
+ To install the PyTorch binaries, you will need to use the supported package manager:  pip . 
+ pip   
+
+ If you installed Python by any of the recommended ways  above ,  pip  will have already been installed for you. 
+
+ Installation   
+
+ pip   
+
+ No CUDA   
+
+ To install PyTorch via pip, and do not have a  CUDA-capable  system or do not require CUDA, in the above selector, choose OS: Windows, Package: Pip and CUDA: None.
+Then, run the command that is presented to you. 
+
+ With CUDA   
+
+ To install PyTorch via pip, and do have a  CUDA-capable  system, in the above selector, choose OS: Windows, Package: Pip and the CUDA version suited to your machine. Often, the latest CUDA version is better.
+Then, run the command that is presented to you. 
+
+ Verification   
+
+ To ensure that PyTorch was installed correctly, we can verify the installation by running sample PyTorch code. Here we will construct a randomly initialized tensor. 
+
+ From the command line, type: 
+
+    python
+    
+
+ then enter the following code: 
+
+     import   torch 
+ x   =   torch  .  rand  (  5  ,   3  ) 
+ print  (  x  ) 
+    
+
+ The output should be something similar to: 
+
+    tensor( ,
+         ,
+         ,
+         ,
+         ])
+    
+
+ Additionally, to check if your GPU driver and CUDA is enabled and accessible by PyTorch, run the following commands to return whether or not the CUDA driver is enabled: 
+
+     import   torch 
+ torch  .  cuda  .  is_available  () 
+    
+
+ Building from source   
+
+ For the majority of PyTorch users, installing from a pre-built binary via a package manager will provide the best experience. However, there are times when you may want to install the bleeding edge PyTorch code, whether for testing or actual development on the PyTorch core. To install the latest PyTorch code, you will need to  build PyTorch from source . 
+
+ Prerequisites   
+
+ 
+   Install  pip  
+   Install  CUDA , if your machine has a  CUDA-enabled GPU . 
+   If you want to build on Windows, Visual Studio with MSVC toolset, and NVTX are also needed. The exact requirements of those dependencies could be found out  here . 
+   Follow the steps described here:  https://github.com/pytorch/pytorch#from-source  
+ 
+
+ You can verify the installation as described  above . 
+
+ 
+ 
+
+  
+
+  
+
+  
+
+  
+
+
+       
+# Get Started Locally
+
+Source: https://pytorch.org/get-started/locally/
+
+Last updated: 2026-07-27
+
+---
+
+[vc_row type=”in_container” full_screen_row_position=”middle” column_margin=”default” column_direction=”default” column_direction_tablet=”default” column_direction_phone=”default” scene_position=”center” text_color=”dark” text_align=”left” row_border_radius=”none” row_border_radius_applies=”bg” row_position_desktop=”default” row_position_tablet=”inherit” row_position_phone=”inherit” overflow=”visible” overlay_strength=”0.3″ gradient_direction=”left_to_right” shape_divider_position=”bottom” bg_image_animation=”none”][vc_column column_padding=”no-extra-padding” column_padding_tablet=”inherit” column_padding_phone=”inherit” column_padding_position=”all” flex_gap_desktop=”10px” column_element_direction_desktop=”default” column_element_spacing=”default” desktop_text_alignment=”default” tablet_text_alignment=”default” phone_text_alignment=”default” background_color_opacity=”1″ background_hover_color_opacity=”1″ column_backdrop_filter=”none” column_shadow=”none” column_border_radius=”none” column_link_target=”_self” column_position=”default” gradient_direction=”left_to_right” overlay_strength=”0.3″ width=”1/1″ tablet_width_inherit=”default” animation_type=”default” bg_image_animation=”none” border_type=”simple” column_border_width=”none” column_border_style=”solid”]   [vc_row type=”in_container” full_screen_row_position=”middle” column_margin=”default” column_direction=”default” column_direction_tablet=”default” column_direction_phone=”default” scene_position=”center” text_color=”dark” text_align=”left” row_border_radius=”none” row_border_radius_applies=”bg” row_position_desktop=”default” row_position_tablet=”inherit” row_position_phone=”inherit” overflow=”visible” class=”get-started” overlay_strength=”0.3″ gradient_direction=”left_to_right” shape_divider_position=”bottom” bg_image_animation=”none” gradient_type=”default” shape_type=””][vc_column column_padding=”no-extra-padding” column_padding_tablet=”inherit” column_padding_phone=”inherit” column_padding_position=”all” flex_gap_desktop=”10px” column_element_direction_desktop=”default” column_element_spacing=”default” desktop_text_alignment=”default” tablet_text_alignment=”default” phone_text_alignment=”default” sticky_content=”true” sticky_content_functionality=”js” background_color_opacity=”1″ background_hover_color_opacity=”1″ column_backdrop_filter=”none” column_shadow=”none” column_border_radius=”none” column_link_target=”_self” column_position=”default” gradient_direction=”left_to_right” overlay_strength=”0.3″ width=”1/4″ tablet_width_inherit=”default” animation_type=”default” bg_image_animation=”none” border_type=”simple” column_border_width=”none” column_border_style=”solid” column_padding_type=”default” gradient_type=”default”]   [vc_column column_padding=”no-extra-padding” column_padding_tablet=”inherit” column_padding_phone=”inherit” column_padding_position=”all” flex_gap_desktop=”10px” column_element_direction_desktop=”default” column_element_spacing=”default” desktop_text_alignment=”default” tablet_text_alignment=”default” phone_text_alignment=”default” background_color_opacity=”1″ background_hover_color_opacity=”1″ column_backdrop_filter=”none” column_shadow=”none” column_border_radius=”none” column_link_target=”_self” column_position=”default” gradient_direction=”left_to_right” overlay_strength=”0.3″ width=”3/4″ tablet_width_inherit=”default” animation_type=”default” bg_image_animation=”none” border_type=”simple” column_border_width=”none” column_border_style=”solid”]    
+

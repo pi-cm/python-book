@@ -1,0 +1,7 @@
+[project]
+name = "python-book"
+version = "0.1.0"
+description = "파이썬 완전 백과사전 — 원고와 빌드 도구"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []

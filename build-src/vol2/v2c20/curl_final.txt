@@ -1,0 +1,10 @@
+{"app":"1.0.0","backend":"onnx","model_file":"fashion_cnn.onnx","model_sha256":"265e35c606cf"}
+{"file":"ankle_boot.png","label":"앵클부츠","class_id":9,"probability":0.9973,"top3":[{"label":"앵클부츠","probability":0.9973},{"label":"운동화","probability":0.0025},{"label":"샌들","probability":0.0002}]}
+HTTP/1.1 200 OK
+date: Wed, 21 Oct 2026 07:01:33 GMT
+server: uvicorn
+content-length: 430
+content-type: application/json
+x-process-time-ms: 1.51
+
+[{"file":"ankle_boot.png","label":"앵클부츠","class_id":9,"probability":0.9973,"top3":[{"label":"앵클부츠","probability":0.9973},{"label":"운동화","probability":0.0025},{"label":"샌들","probability":0.0002}]},{"file":"pullover.png","label":"풀오버","class_id":2,"probability":0.9998,"top3":[{"label":"풀오버","probability":0.9998},{"label":"T셔츠","probability":0.0001},{"label":"셔츠","probability":0.0}]}]

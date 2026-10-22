@@ -1,0 +1,4 @@
+체크포인팅 끔: 최고 메모리  7.78 GB, forward+backward  241 ms
+체크포인팅 켬: 최고 메모리  2.43 GB, forward+backward  322 ms
+파라미터 151,154,688개 (float32로 0.56 GB)
+두 방식의 기울기가 같은가: True

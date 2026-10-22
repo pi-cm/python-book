@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# 빌드 산출물
+dist/
+build/
+
+# 시크릿
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 책 빌드 산출물
+output/*.pdf
+output/*.epub
+output/*.docx
+output/.book-fonts.tex

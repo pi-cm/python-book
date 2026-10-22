@@ -1,0 +1,198 @@
+02 **데이터 누수(data leakage)**
+02 **중앙값(median)**
+02 **범주형(categorical)**
+02 **원-핫 인코딩(one-hot encoding)**
+02 **희소 행렬(sparse matrix)**
+02 **불균형 데이터(imbalanced data)**
+02 **클래스 가중치(class weight)**
+04 **텐서(tensor)**
+04 **자료형(dtype)**
+04 **모양(shape)**
+04 **배치(batch)**
+04 **마스크(mask)**
+04 **들여다보는 창(view)**
+04 **보폭(stride)**
+04 **이어져 있다(contiguous)**
+04 **브로드캐스팅(broadcasting)**
+04 **장치(device)**
+03 **선형 회귀(linear regression)**
+03 **릿지(Ridge)**
+03 **라소(Lasso)**
+03 **가중치 감쇠(weight decay)**
+03 **시그모이드(sigmoid)**
+03 **로지스틱 회귀(logistic regression)**
+03 **결정 트리(decision tree)**
+03 **랜덤 포레스트(random forest)**
+03 **부스팅(boosting)**
+03 **군집(clustering)**
+03 **관성(inertia)**
+03 **실루엣 점수(silhouette score)**
+03 **혼동 행렬(confusion matrix)**
+03 **정밀도(precision)**
+03 **재현율(recall)**
+03 **K-겹 교차 검증(K-fold cross validation)**
+01 **머신러닝(machine learning)**
+01 **인공지능(AI)**
+01 **샘플(sample)**
+01 **특성(feature)**
+01 **레이블(label)**
+01 **지도 학습(supervised learning)**
+01 **분류(classification)**
+01 **회귀(regression)**
+01 **비지도 학습(unsupervised learning)**
+01 **강화 학습(reinforcement learning)**
+01 **모델(model)**
+01 **파라미터(parameter)**
+01 **학습(learning)**
+01 **훈련(training)**
+01 **예측(prediction)**
+01 **손실(loss)**
+01 **하이퍼파라미터(hyperparameter)**
+01 **최근접 이웃(k-nearest neighbors, k-NN)**
+01 **일반화(generalization)**
+01 **과적합(overfitting)**
+01 **과소적합(underfitting)**
+07 **에폭(epoch)**
+07 **맵 스타일(map-style)**
+07 **데이터 증강(data augmentation)**
+07 **패딩(padding)**
+07 **버킷팅(bucketing)**
+06 **가중치(weight)**
+06 **편향(bias)**
+06 **층(layer)**
+06 **활성화 함수(activation function)**
+06 **로짓(logit)**
+06 **소프트맥스(softmax)**
+06 **다층 퍼셉트론(MLP, multi-layer perceptron)**
+06 **순전파(forward pass)**
+06 **손실 함수(loss function)**
+06 **교차 엔트로피(cross entropy)**
+06 **옵티마이저(optimizer)**
+06 **드롭아웃(dropout)**
+06 **체크포인트(checkpoint)**
+08 **생성기(Generator)**
+08 **학습 곡선(learning curve)**
+08 **배치 정규화(batch normalization)**
+08 **학습률 스케줄러(learning rate scheduler)**
+08 **워밍업(warm-up)**
+08 **조기 종료(early stopping)**
+08 **참을성(patience)**
+08 **그래디언트 폭주(exploding gradient)**
+08 **그래디언트 클리핑(gradient clipping)**
+08 **학습률 범위 테스트(learning rate range test)**
+08 **그래디언트 소실(vanishing gradient)**
+08 **합성곱 신경망(CNN)**
+05 **경사하강법(gradient descent)**
+05 **그래디언트(gradient)**
+05 **학습률(learning rate)**
+05 **지역 최솟값(local minimum)**
+05 **전역 최솟값(global minimum)**
+05 **기울기 검사(gradient check)**
+05 **자동 미분(autograd)**
+05 **계산 그래프(computational graph)**
+05 **쌓아(accumulate)**
+05 **실행하면서 정의(define-by-run)**
+05 **연쇄 법칙(chain rule)**
+05 **역전파(backpropagation)**
+05 **확률적 경사하강법(SGD)**
+10 **전이 학습(transfer learning)**
+10 **사전학습 모델(pretrained model)**
+10 **몸통(backbone)**
+10 **머리(head)**
+10 **특징 추출(feature extraction)**
+10 **미세조정(fine-tuning)**
+10 **순환 신경망(RNN)**
+11 **순환 신경망(RNN, Recurrent Neural Network)**
+11 **창(window)**
+11 **은닉 상태(hidden state)**
+11 **시간을 거슬러 가는 역전파(BPTT, Backpropagation Through Time)**
+11 **기울기 소실(vanishing gradient)**
+11 **기울기 폭주(exploding gradient)**
+11 **LSTM(Long Short-Term Memory)**
+11 **셀 상태(cell state)**
+11 **문(gate)**
+11 **GRU(Gated Recurrent Unit)**
+11 **더하기 문제(adding problem)**
+11 **양방향(bidirectional)**
+09 **합성곱 신경망(Convolutional Neural Network, CNN)**
+09 **합성곱(convolution)**
+09 **필터(filter)**
+09 **커널(kernel)**
+09 **특징 맵(feature map)**
+09 **상호 상관(cross-correlation)**
+09 **채널(channel)**
+09 **파라미터 공유(parameter sharing)**
+09 **풀링(pooling)**
+09 **전역 평균 풀링(global average pooling)**
+09 **이동 등변성(translation equivariance)**
+09 **이동 불변성(translation invariance)**
+09 **수용 영역(receptive field)**
+09 **지름길(shortcut, skip connection)**
+09 **잔차 연결(residual connection)**
+09 **돌출 맵(saliency map)**
+12 **트랜스포머(Transformer)**
+12 **어텐션(attention)**
+12 **쿼리(query, q)**
+12 **키(key, k)**
+12 **값(value, v)**
+12 **스케일드 닷 프로덕트 어텐션(scaled dot-product attention)**
+12 **셀프 어텐션(self-attention)**
+12 **인과 마스크(causal mask)**
+12 **멀티헤드 어텐션(multi-head attention)**
+12 **헤드(head)**
+12 **층 정규화(layer normalization)**
+12 **피드포워드(feed-forward)**
+12 **교차 어텐션(cross-attention)**
+14 **대규모 언어 모델(LLM, Large Language Model)**
+14 **뽑는(sampling)**
+14 **온도(temperature)**
+14 **환각(hallucination)**
+14 **양자화(quantization)**
+14 **LoRA(Low-Rank Adaptation)**
+14 **랭크(rank)**
+18 **글자(str)**
+18 **가지치기(pruning)**
+13 **NSMC(Naver Sentiment Movie Corpus)**
+13 **OOV(out-of-vocabulary)**
+13 **토크나이저(tokenizer)**
+13 **BPE(Byte Pair Encoding)**
+13 **임베딩(embedding)**
+13 **기준 모델(baseline)**
+15 **판별 모델(discriminative model)**
+15 **생성 모델(generative model)**
+15 **오토인코더(autoencoder)**
+15 **인코더(encoder)**
+15 **잠재 벡터(latent vector)**
+15 **디코더(decoder)**
+15 **병목(bottleneck)**
+15 **잡음 제거 오토인코더(denoising autoencoder)**
+15 **KL 발산(Kullback-Leibler divergence)**
+15 **재매개변수화(reparameterization trick)**
+15 **보간(interpolation)**
+15 **생성자(generator)**
+15 **판별자(discriminator)**
+15 **확산 모델(diffusion model)**
+15 **DDPM(Denoising Diffusion Probabilistic Models)**
+15 **분류기 없는 가이던스(classifier-free guidance)**
+15 **확산 모델(DDPM)**
+19 **ONNX(Open Neural Network Exchange)**
+19 **노드(node)**
+19 **이니셜라이저(initializer)**
+19 **프로토콜 버퍼(protobuf)**
+19 **세션(session)**
+19 **실행 장치(execution provider)**
+19 **동적 차원(dynamic dimension)**
+19 **배치 정규화 접어 넣기(folding)**
+19 **영점(zero point)**
+19 **동적 양자화(dynamic quantization)**
+19 **정적 양자화(static quantization)**
+19 **보정(calibration)**
+19 **지식 증류(knowledge distillation)**
+20 **모델 서빙(model serving)**
+20 **동적 배칭(dynamic batching)**
+20 **지연 시간(latency)**
+20 **픽스처(fixture)**
+20 **과다 구독(oversubscription)**
+20 **이미지(image)**
+20 **컨테이너(container)**
+20 **다단계 빌드(multi-stage build)**

@@ -1,0 +1,5 @@
+중간 점검
+그래프 수: 3 | 끊긴 곳: 2
+ - Failed to trace builtin operator
+ - generic_jump TensorVariable()
+fullgraph=True: Unsupported

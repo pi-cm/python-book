@@ -1,0 +1,7 @@
+GPU 2개: NVIDIA GeForce RTX 4090
+all_reduce   1 MB:    0.56 ms ( 1.74 GB/s)
+all_reduce   4 MB:    2.10 ms ( 1.86 GB/s)
+all_reduce  16 MB:    8.19 ms ( 1.91 GB/s)
+all_reduce  64 MB:   32.46 ms ( 1.93 GB/s)
+all_reduce 256 MB:  127.29 ms ( 1.96 GB/s)
+GPU 안 복사 256 MB:    0.59 ms (  424 GB/s)

@@ -1,0 +1,7 @@
+bb7549d4c72823b8c1d4d9e57a6a0838ded62a8600c3ebd96d639b5c4705affa
+NAMES        IMAGE                      STATUS                            PORTS
+restaurant   restaurant-service:1.0.0   Up 2 seconds (health: starting)   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+{"strategy":"personal","items":[{"id":271,"name":"신촌 양식 271","area":"신촌","cuisine":"양식","price":1,"score":2.5672},{"id":201,"name":"신촌 양식 201","area":"신촌","cuisine":"양식","price":1,"score":2.2646},{"id":166,"name":"홍대 중식 166","area":"홍대","cuisine":"중식","price":1,"score":2.1025}]}
+{"strategy":"new_user","items":[{"id":242,"name":"성수 중식 242","area":"성수","cuisine":"중식","price":1,"score":9.5439},{"id":59,"name":"성수 고기 059","area":"성수","cuisine":"고기","price":1,"score":9.0283},{"id":251,"name":"성수 중식 251","area":"성수","cuisine":"중식","price":1,"score":8.9532}]}
+NAMES        STATUS
+restaurant   Up 17 seconds (healthy)

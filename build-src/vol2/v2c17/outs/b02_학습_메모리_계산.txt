@@ -1,0 +1,5 @@
+파라미터 4 + 기울기 4 + Adam 1차 모멘트 4 + Adam 2차 모멘트 4 = 파라미터당 16바이트
+0.5B: 추론(bfloat16)   0.9GB, 학습(float32+Adam)    7.4GB, 학습(float32+SGD)   3.7GB
+  1B: 추론(bfloat16)   1.9GB, 학습(float32+Adam)   14.9GB, 학습(float32+SGD)   7.5GB
+  7B: 추론(bfloat16)  13.0GB, 학습(float32+Adam)  104.3GB, 학습(float32+SGD)  52.2GB
+활성화는 따로: 배치 크기와 입력 길이에 비례해서 더 든다
