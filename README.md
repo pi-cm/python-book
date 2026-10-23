@@ -12,6 +12,13 @@
 
 ## 읽기
 
+PDF로 받아 읽을 수 있습니다.
+
+- [1권 파이썬 PDF 내려받기](https://github.com/pi-cm/python-book/releases/latest/download/python-encyclopedia-vol1-python.pdf) (1,134쪽)
+- [2권 PyTorch 딥러닝 PDF 내려받기](https://github.com/pi-cm/python-book/releases/latest/download/python-encyclopedia-vol2-pytorch.pdf) (1,120쪽)
+
+지난 판은 [Releases](https://github.com/pi-cm/python-book/releases)에 있습니다.
+
 원고는 장마다 마크다운 파일 하나입니다. 깃허브에서 `manuscript/chapters/`나 `manuscript-vol2/chapters/`를 열면 바로 읽을 수 있어요.
 
 ## 예제 실행
